@@ -3,6 +3,7 @@ val Sl4jVersion = "1.7.36"
 val CatsVersion = "2.9.0"
 val CatsEffectVersion = "2.5.5"
 val Log4CatsVersion = "1.7.0"
+val CirceVersion = "0.14.5"
 
 lazy val root = (project in file("."))
   .settings(
@@ -16,6 +17,12 @@ lazy val root = (project in file("."))
       "org.typelevel" %% "cats-kernel" % CatsVersion,
       "org.typelevel" %% "cats-effect" % CatsEffectVersion,
       "org.typelevel" %% "log4cats-core" % Log4CatsVersion,
+      "eu.timepit" %% "refined" % "0.10.2",
+      "io.estatico" %% "newtype" % "0.4.4",
+      "org.scalaj" %% "scalaj-http" % "2.4.2",
+      "io.circe" %% "circe-core" % CirceVersion,
+      "io.circe" %% "circe-generic" % CirceVersion,
+      "io.circe" %% "circe-parser" % CirceVersion,
     )
   )
 
